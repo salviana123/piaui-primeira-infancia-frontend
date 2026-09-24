@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piauí Primeira Infância - Alunos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Piauí Primeira Infância</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a class="active" href="alunos.html">Alunos</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="relatorios.html">Relatórios</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-title">
+      <div><p class="tag">Gestão escolar</p><h1>Alunos cadastrados</h1></div>
+      <a class="button" href="cadastro.html">+ Novo aluno</a>
+    </div>
+
+    <div class="search-box">
+      <input id="busca" type="search" placeholder="Pesquisar aluno..." oninput="filtrarAlunos()">
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Nome</th><th>Turma</th><th>Idade</th><th>Situação</th></tr></thead>
+        <tbody id="listaAlunos">
+          <tr><td>Ana Beatriz</td><td>Infantil I</td><td>4 anos</td><td><span class="status">Ativo</span></td></tr>
+          <tr><td>João Pedro</td><td>Infantil II</td><td>5 anos</td><td><span class="status">Ativo</span></td></tr>
+          <tr><td>Maria Clara</td><td>Infantil I</td><td>4 anos</td><td><span class="status">Ativo</span></td></tr>
+          <tr><td>Lucas Gabriel</td><td>Infantil II</td><td>5 anos</td><td><span class="status">Ativo</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+  <footer>Projeto acadêmico • Piauí Primeira Infância</footer>
+  <script src="script.js"></script>
+</body>
+</html>

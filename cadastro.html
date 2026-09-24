@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Piauí Primeira Infância - Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="brand">Piauí Primeira Infância</div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="alunos.html">Alunos</a>
+      <a class="active" href="cadastro.html">Cadastro</a>
+      <a href="relatorios.html">Relatórios</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="form-card">
+      <p class="tag">Cadastro de estudante</p>
+      <h1>Novo aluno</h1>
+      <p>Preencha os dados abaixo para registrar um novo estudante.</p>
+
+      <form onsubmit="cadastrarAluno(event)">
+        <div class="form-grid">
+          <label>Nome completo
+            <input id="nome" type="text" required placeholder="Digite o nome do aluno">
+          </label>
+          <label>Data de nascimento
+            <input type="date" required>
+          </label>
+          <label>Turma
+            <select required><option value="">Selecione</option><option>Infantil I</option><option>Infantil II</option></select>
+          </label>
+          <label>Responsável
+            <input type="text" required placeholder="Nome do responsável">
+          </label>
+        </div>
+        <button class="button" type="submit">Cadastrar aluno</button>
+      </form>
+      <p id="mensagem" class="message"></p>
+    </section>
+  </main>
+
+  <footer>Projeto acadêmico • Piauí Primeira Infância</footer>
+  <script src="script.js"></script>
+</body>
+</html>
